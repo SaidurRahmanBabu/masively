@@ -24,4 +24,4 @@
 	}
 	add_action('wp_head', 'masive_custom_header_bg_color');
 
-	add_filter( 'acf/settings/show_admin', '__return_false' );
+	//add_filter( 'acf/settings/show_admin', '__return_false' );

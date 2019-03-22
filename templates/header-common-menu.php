@@ -51,11 +51,9 @@
 							?>
 						</ul>
 						<ul class="icons">
-							<li><a href="#" class="icon fa-twitter"><span class="label">Twitter</span></a></li>
-							<li><a href="#" class="icon fa-facebook"><span class="label">Facebook</span></a></li>
-							<li><a href="#" class="icon fa-instagram"><span class="label">Instagram</span></a></li>
-							<li><a href="#" class="icon fa-github"><span class="label">GitHub</span></a></li>
-
+							<?php 
+								get_template_part('templates/masive-social-menu'); 
+							?>
 							<li>
 								<div class="masive-search">
 									<form method="get" action="<?php bloginfo('home'); ?>">

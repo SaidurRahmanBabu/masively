@@ -22,6 +22,8 @@
 
 		add_theme_support('post-thumbnails');
 
+		add_image_size( 'masive_rect', 450, 300, false );
+
 		register_nav_menus(array(
 			'main-menu' 		=> __('Main Menu','masively'),
 			'footer-menu' 	=> __('Footer Menu','masively'),
@@ -48,3 +50,15 @@
 
 		echo implode(" ", $slice_content);
 	}
+
+	//shorten home page title 
+	function short_title($after = '', $length) {
+		$mytitle = explode(' ', get_the_title(), $length);
+			if (count($mytitle)>=$length) {
+				array_pop($mytitle);
+				$mytitle = implode(" ",$mytitle). $after;
+			} else {
+				$mytitle = implode(" ",$mytitle);
+		}
+	return $mytitle;
+}

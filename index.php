@@ -49,7 +49,7 @@
 									<header>
 										<span class="date"><?php echo get_the_date('F d, Y'); ?></span>
 										<h2><a href="<?php the_permalink(); ?>">
-											<?php the_title(); ?>
+											<?php echo short_title('...', 5); ?>
 										</a></h2>
 
 										<div class="masive-post-details">
@@ -73,7 +73,7 @@
 									<a href="<?php the_permalink(); ?>" class="image fit">
 										<?php
 											if(current_theme_supports('post-thumbnails')){
-												the_post_thumbnail();
+												the_post_thumbnail( 'post-thumbnail', 'masive_rect' );
 											}
 										?>
 									</a>
