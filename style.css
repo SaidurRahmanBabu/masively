@@ -37,6 +37,10 @@ li {
 .masive-post-details p {
 	margin-bottom: 0;
 }
+.pagination span.current {
+  background-color: #eeeeee;
+  color: #666;
+}
 .masive-author-info,
 .masive-comments-wrapper {
   margin-top: 30px;

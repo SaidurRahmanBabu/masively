@@ -3116,7 +3116,7 @@ input, select, textarea {
 			text-transform: uppercase;
 		}
 
-		.pagination .next, .pagination .previous {
+		.pagination .next, .pagination .prev {
 			text-decoration: none;
 			padding: 0 1.75rem;
 		}
@@ -3135,7 +3135,7 @@ input, select, textarea {
 				color: inherit !important;
 			}
 
-		.pagination .previous:before {
+		.pagination .prev:before {
 			content: '\f104';
 			margin-right: 0.9375em;
 		}
