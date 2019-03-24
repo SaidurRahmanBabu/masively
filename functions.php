@@ -1,4 +1,6 @@
 <?php
+	//text domain
+	load_theme_textdomain('masively');
 	//theme scripts enqueue
 	require_once('inc/masively-scripts.php');
 	//add_theme_supports, featured post, read more
